@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_first_webpage"
+            android:icon="@drawable/ic_baseline_web_24"
+            android:title="@string/menu_webpage" />
+
+        <item
+            android:id="@+id/nav_create_color"
+            android:icon="@drawable/ic_baseline_color_lens_24"
+            android:title="@string/menu_colour" />
+        <item
+            android:id="@+id/nav_new_font"
+            android:icon="@drawable/ic_baseline_font_download_24"
+            android:title="@string/menu_font" />
+
+        <item
+            android:id="@+id/nav_overview"
+            android:icon="@drawable/ic_baseline_preview_24"
+            android:title="@string/menu_OverView" />
+    </group>
+</menu>

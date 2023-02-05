@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearlayoutid"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:clickable="true"
+    android:focusable="true"
+    tools:ignore="Hardcodedtext">
+
+
+    <ImageView
+        android:id="@+id/colorimgid"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="10dp"
+        android:contentDescription="@string/app_name"
+        app:srcCompat="@color/purple_500" />
+
+    <TextView
+        android:id="@+id/color_txt_id"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:minHeight="48dp"
+        android:padding="5dp"
+        android:text="TextView"
+        android:textAlignment="inherit"
+        android:textSize="24sp" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>

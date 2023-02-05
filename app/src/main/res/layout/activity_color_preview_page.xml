@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/color"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".colorPreview.ColorPreviewPage"
+    tools:ignore="HardcodedText">
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@color/Burgundy" />
+
+    <Button
+        android:id="@+id/cancelcolorpreviewbtnid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/cool"
+        android:text="Cancel"
+        app:layout_constraintTop_toBottomOf="@+id/setcolorpreviewbtnid" />
+
+    <Button
+        android:id="@+id/setcolorpreviewbtnid"
+        android:layout_width="match_parent"
+        android:layout_height="107dp"
+        android:backgroundTint="@color/warm"
+        android:text="Set Color"
+        android:textSize="50sp"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

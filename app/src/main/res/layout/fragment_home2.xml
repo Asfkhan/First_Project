@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context=".ui.home.Home"
+    tools:ignore="HardcodedText"
+    >
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:fontFamily="cursive"
+        android:gravity="center_horizontal"
+        android:padding="50dp"
+        android:text="@string/app_daily_quote"
+        android:textColor="#338637"
+        android:textSize="20sp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Step1"
+        android:textColor="#DD2C00"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/createwebsiteid"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/orange"
+        android:text="CREATE WEBSITE"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/managewebsiteid"
+        android:layout_gravity="center"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/Morning_glory"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:text="MANAGE WEBSITE" />
+
+</LinearLayout>

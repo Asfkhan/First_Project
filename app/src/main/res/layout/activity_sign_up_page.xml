@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_start_background">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="106dp"
+        android:gravity="center_horizontal"
+        android:text="@string/Signup"
+        android:textColor="#FF3D00"
+        android:textColorHighlight="#F2450F"
+        android:textColorLink="#FF5722"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/textInputLayout1"
+        app:layout_constraintStart_toStartOf="@+id/textInputLayout1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout1"
+        android:layout_width="250dp"
+        android:layout_height="59dp"
+        android:layout_margin="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:startIconDrawable="@drawable/ic_baseline_markunread_24">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/e1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#EFA087"
+            android:hint="@string/Email_ID"
+            android:textColorHint="#110909" />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout2"
+        android:layout_width="250dp"
+        android:layout_height="59dp"
+        android:layout_margin="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/textInputLayout1"
+        app:layout_constraintStart_toStartOf="@+id/textInputLayout1"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout1"
+        app:startIconDrawable="@drawable/ic_baseline_person_add_alt_1_24">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/u1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#EFA087"
+            android:freezesText="false"
+            android:hint="@string/Username"
+            android:inputType="textPersonName"
+            android:textColorHint="#37474F" />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout3"
+        android:layout_width="250dp"
+        android:layout_height="57dp"
+        android:layout_margin="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/textInputLayout2"
+        app:layout_constraintStart_toStartOf="@+id/textInputLayout2"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout2"
+        app:startIconDrawable="@drawable/ic_baseline_lock_open_24">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#EFA087"
+            android:hint="@string/PasswordloginPage"
+            android:textColorHint="#37474F" />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout4"
+        android:layout_width="250dp"
+        android:layout_height="57dp"
+        android:layout_margin="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/textInputLayout3"
+        app:layout_constraintStart_toStartOf="@+id/textInputLayout3"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout3"
+        app:startIconDrawable="@drawable/ic_baseline_lock_24">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/p1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#EFA087"
+            android:cursorVisible="true"
+            android:hint="@string/confirm_password"
+            android:inputType="textPassword"
+            android:textColorHint="#37474F" />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/agree_terms_and_condition"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="@+id/textInputLayout4"
+        app:layout_constraintStart_toStartOf="@+id/textInputLayout4"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout4" />
+
+    <Button
+        android:id="@+id/add1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/add_me"
+        android:textSize="24sp"
+        app:backgroundTint="#3D5AFE"
+        app:layout_constraintEnd_toEndOf="@+id/textInputLayout4"
+        app:layout_constraintStart_toStartOf="@+id/textInputLayout4"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox" />
+
+    <TextView
+        android:id="@+id/gologin"
+        android:layout_width="250dp"
+        android:layout_height="0dp"
+        android:gravity="center_horizontal"
+        android:text="@string/Go_to_login"
+        android:textColor="#FF3D00"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/add1"
+        app:layout_constraintStart_toStartOf="@+id/add1"
+        app:layout_constraintTop_toBottomOf="@+id/add1" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

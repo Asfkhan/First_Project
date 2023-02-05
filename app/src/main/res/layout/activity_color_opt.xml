@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    tools:context=".color_opt_activity.Color_opt_activity"
+    tools:ignore="HardcodedText">
+
+    <!--Give all widgets, the proper id to
+        handle them in MainActivity.java-->
+
+    <!--GeeksforGeeks Text-->
+    <TextView
+        android:id="@+id/colorpicker_heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="32dp"
+        android:fontFamily="casual"
+        android:text="We are all the colors of life and we live together in harmony to make this world more beautiful and give happiness to everyone.”"
+        android:textColor="#303F9F"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <!--Pick color Button-->
+    <Button
+        android:id="@+id/pick_color_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:text="Pick Color"
+        android:textColor="#212121" />
+
+    <View
+        android:id="@+id/blob"
+        android:layout_width="259dp"
+        android:layout_height="142dp"
+        android:layout_gravity="center_horizontal" />
+
+
+</LinearLayout>

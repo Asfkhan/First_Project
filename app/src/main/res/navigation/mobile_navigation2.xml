@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation2"
+    app:startDestination="@+id/nav_first_webpage">
+
+    <fragment
+        android:id="@+id/nav_first_webpage"
+        android:name="com.myproject.websitemanager.ui.home.createwebsiteactivity.ui.webpage.WebPage"
+        android:label="@string/menu_webpage"
+        tools:layout="@layout/fragment_create_webpage" />
+
+    <fragment
+        android:id="@+id/nav_create_color"
+        android:name="com.myproject.websitemanager.ui.home.createwebsiteactivity.ui.create_font.CreateFont"
+        android:label="@string/menu_change_background_color"
+        tools:layout="@layout/create_colors" />
+
+    <fragment
+        android:id="@+id/nav_new_font"
+        android:name="com.myproject.websitemanager.ui.home.createwebsiteactivity.ui.create_color.CreateColor"
+        android:label="@string/menu_new_fontstyle"
+        tools:layout="@layout/create_fonts" />
+
+    <fragment
+        android:id="@+id/nav_overview"
+        android:name="com.myproject.websitemanager.ui.home.createwebsiteactivity.ui.overview.OverView"
+        android:label="@string/menu_OverView"
+        tools:layout="@layout/fragment_overview" />
+</navigation>
