@@ -1,122 +1,121 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".login_page.LoginPage"
-    android:background="@drawable/app_start_background"
-    android:orientation="vertical">
+    android:background="@drawable/app_start_background">
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="217dp"
+        android:layout_height="161dp"
+        android:layout_marginTop="116dp"
+        android:contentDescription="@string/LoginPageHeading"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/app_start_image" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="80dp"
         android:gravity="center_horizontal"
         android:text="@string/LoginPageHeading"
         android:textColor="@color/orange"
-        android:textSize="48sp"
-        android:textStyle="bold" />
-
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:emojiCompatEnabled="false"
+        app:layout_constraintEnd_toEndOf="@+id/imageView4"
+        app:layout_constraintStart_toStartOf="@+id/imageView4"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
 
     <com.google.android.material.textfield.TextInputLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="60dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="60dp"
-        android:layout_marginBottom="10dp"
-        android:background="@drawable/text_box_background"
-        android:hint="@string/Email_ID"
-        android:textColorHint="#E64A19"
-        app:endIconDrawable="@drawable/ic_baseline_cancel_24"
-        app:endIconMode="clear_text"
-        app:startIconDrawable="@drawable/ic_baseline_markunread_24"
-        app:startIconTint="#030202">
+        android:id="@+id/textInputLayout1"
+        android:layout_width="250dp"
+        android:layout_height="59dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:startIconDrawable="@drawable/ic_baseline_markunread_24">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/t1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:background="@drawable/text_box_background"
-            android:includeFontPadding="true"
-            android:inputType="textPostalAddress"
-            android:minHeight="48dp"
-            android:textColorHighlight="#A9D4A9"
-            android:textColorHint="#E64A19"
-            android:textSize="12sp"
-            android:textStyle="bold" />
+            android:background="#E0F2F1"
+            android:hint="@string/Email_ID"
+            android:textColorHighlight="#388E3C"
+            android:textColorHint="#01579B" />
+
+
     </com.google.android.material.textfield.TextInputLayout>
 
 
     <com.google.android.material.textfield.TextInputLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginStart="60dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="60dp"
-        android:background="@drawable/text_box_background"
-        android:hint="@string/PasswordloginPage"
-        android:textColorHint="#E64A19"
-        app:passwordToggleEnabled="true"
-        app:passwordToggleTint="#584135"
-        app:startIconDrawable="@drawable/ic_baseline_lock_24"
-        app:startIconTint="#090606">
+        android:id="@+id/textInputLayout2"
+        android:layout_width="250dp"
+        android:layout_height="57dp"
+        app:layout_constraintEnd_toEndOf="@+id/textInputLayout1"
+        app:layout_constraintStart_toStartOf="@+id/textInputLayout1"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout1"
+        app:startIconDrawable="@drawable/ic_baseline_lock_24">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/t2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/text_box_background"
+            android:background="#E0F2F1"
+            android:hint="@string/PasswordloginPage"
             android:inputType="textPassword"
-            android:minHeight="48dp"
             android:textColorHighlight="#388E3C"
-            android:textColorHint="#E64A19"
-            android:textStyle="bold" />
+            android:textColorHint="#7B1FA2" />
+
+
     </com.google.android.material.textfield.TextInputLayout>
+
 
     <CheckBox
         android:id="@+id/checkBox"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="20dp"
         android:text="@string/agree_terms_and_condition"
-        android:textColor="#1976D2"
         android:textStyle="italic"
-        app:buttonIcon="@android:drawable/checkbox_on_background" />
+        app:layout_constraintEnd_toEndOf="@+id/textInputLayout2"
+        app:layout_constraintStart_toStartOf="@+id/textInputLayout2"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout2" />
 
     <ProgressBar
         android:id="@+id/myprogress"
         android:layout_width="14dp"
         android:layout_height="23dp"
-        android:visibility="gone"
-        android:layout_gravity="center"
-        android:layout_marginTop="20dp" />
+        app:layout_constraintEnd_toEndOf="@+id/validuser1"
+        app:layout_constraintStart_toStartOf="@+id/validuser1"
+        app:layout_constraintTop_toBottomOf="@+id/validuser1" />
 
     <TextView
         android:id="@+id/gosignup"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="10dp"
         android:gravity="center_horizontal"
         android:text="@string/Go_to_signup"
         android:textColor="@color/black"
-        android:textSize="20sp" />
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/myprogress" />
 
     <Button
         android:id="@+id/validuser1"
         android:layout_width="205dp"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="40dp"
         android:text="@string/login_now"
-        android:textSize="24sp" />
+        android:textSize="24sp"
+        app:backgroundTint="#D84315"
+        app:layout_constraintEnd_toEndOf="@+id/checkBox"
+        app:layout_constraintStart_toStartOf="@+id/checkBox"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox" />
 
 
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
