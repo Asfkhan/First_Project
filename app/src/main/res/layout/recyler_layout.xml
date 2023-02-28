@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:ignore="HardcodedText">
+
+    <TextView
+        android:id="@+id/message_to_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="50dp"
+        android:ellipsize="marquee"
+        android:gravity="center"
+        android:scrollHorizontally="true"
+        android:singleLine="true"
+        android:text="View Your WebSite "
+        android:textSize="34sp"
+        app:drawableStartCompat="@drawable/ambilwarna_arrow_down"
+        app:drawableEndCompat="@drawable/ambilwarna_arrow_down" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="#FFFFFF"
+        android:longClickable="true">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+</LinearLayout>

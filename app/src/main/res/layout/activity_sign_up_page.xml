@@ -1,42 +1,88 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/app_start_background">
+    android:layout_gravity="center|center_horizontal"
+    android:background="@drawable/app_start_background"
+    android:gravity="center"
+    tools:context=".signup_page.SignUpPage"
+    android:orientation="vertical">
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="106dp"
         android:gravity="center_horizontal"
         android:text="@string/Signup"
         android:textColor="#FF3D00"
         android:textColorHighlight="#F2450F"
         android:textColorLink="#FF5722"
         android:textSize="34sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@+id/textInputLayout1"
-        app:layout_constraintStart_toStartOf="@+id/textInputLayout1"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="5dp"
+            android:contentDescription="@string/nav_header_desc"
+            app:cardCornerRadius="100dp">
+
+            <ImageView
+                android:id="@+id/userimg_id"
+                android:layout_width="90dp"
+                android:layout_height="89dp"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/ic_baseline_account_circle_24" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="bottom|center"
+            android:layout_marginTop="20dp"
+            app:cardBackgroundColor="#4A4848"
+            app:cardCornerRadius="100dp">
+
+            <ImageView
+                android:id="@+id/userImgBtn_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/ic_baseline_edit_24" />
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textInputLayout1"
         android:layout_width="250dp"
         android:layout_height="59dp"
-        android:layout_margin="16dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="2dp"
+        android:background="@drawable/text_box_background"
+        app:endIconDrawable="@drawable/ic_baseline_cancel_24"
+        app:endIconMode="clear_text"
+        app:helperTextTextAppearance="@style/TextAppearance.AppCompat.Body1"
+        app:passwordToggleDrawable="@drawable/ic_baseline_cancel_24"
+        app:passwordToggleEnabled="true"
+        app:prefixTextAppearance="@style/TextAppearance.AppCompat.Body1"
         app:startIconDrawable="@drawable/ic_baseline_markunread_24">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/e1"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="#EFA087"
+            android:layout_height="match_parent"
+            android:background="@drawable/text_box_background"
             android:hint="@string/Email_ID"
             android:textColorHint="#110909" />
 
@@ -47,17 +93,20 @@
         android:id="@+id/textInputLayout2"
         android:layout_width="250dp"
         android:layout_height="59dp"
-        android:layout_margin="16dp"
-        app:layout_constraintEnd_toEndOf="@+id/textInputLayout1"
-        app:layout_constraintStart_toStartOf="@+id/textInputLayout1"
-        app:layout_constraintTop_toBottomOf="@+id/textInputLayout1"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/text_box_background"
+        app:endIconDrawable="@drawable/ic_baseline_cancel_24"
+        app:endIconMode="clear_text"
         app:startIconDrawable="@drawable/ic_baseline_person_add_alt_1_24">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/u1"
+            android:id="@+id/NewuserName_id"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="#EFA087"
+            android:layout_height="match_parent"
+            android:background="@drawable/text_box_background"
             android:freezesText="false"
             android:hint="@string/Username"
             android:inputType="textPersonName"
@@ -70,17 +119,21 @@
         android:id="@+id/textInputLayout3"
         android:layout_width="250dp"
         android:layout_height="57dp"
-        android:layout_margin="16dp"
-        app:layout_constraintEnd_toEndOf="@+id/textInputLayout2"
-        app:layout_constraintStart_toStartOf="@+id/textInputLayout2"
-        app:layout_constraintTop_toBottomOf="@+id/textInputLayout2"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/text_box_background"
+        app:endIconMode="password_toggle"
         app:startIconDrawable="@drawable/ic_baseline_lock_open_24">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/password_id"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="#EFA087"
+            android:layout_height="match_parent"
+            android:background="@drawable/text_box_background"
             android:hint="@string/PasswordloginPage"
+            android:inputType="textPassword"
             android:textColorHint="#37474F" />
 
 
@@ -90,18 +143,20 @@
         android:id="@+id/textInputLayout4"
         android:layout_width="250dp"
         android:layout_height="57dp"
-        android:layout_margin="16dp"
-        app:layout_constraintEnd_toEndOf="@+id/textInputLayout3"
-        app:layout_constraintStart_toStartOf="@+id/textInputLayout3"
-        app:layout_constraintTop_toBottomOf="@+id/textInputLayout3"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="1dp"
+        android:background="@drawable/text_box_background"
+        app:endIconDrawable="@drawable/ic_baseline_cancel_24"
+        app:endIconMode="clear_text"
         app:startIconDrawable="@drawable/ic_baseline_lock_24">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/p1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#EFA087"
-            android:cursorVisible="true"
+            android:background="@drawable/text_box_background"
             android:hint="@string/confirm_password"
             android:inputType="textPassword"
             android:textColorHint="#37474F" />
@@ -114,34 +169,26 @@
         android:id="@+id/checkBox"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
         android:text="@string/agree_terms_and_condition"
         android:textStyle="italic"
-        app:layout_constraintEnd_toEndOf="@+id/textInputLayout4"
-        app:layout_constraintStart_toStartOf="@+id/textInputLayout4"
-        app:layout_constraintTop_toBottomOf="@+id/textInputLayout4" />
+        app:buttonIcon="@android:drawable/checkbox_on_background" />
 
     <Button
         android:id="@+id/add1"
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/add_me"
-        android:textSize="24sp"
-        app:backgroundTint="#3D5AFE"
-        app:layout_constraintEnd_toEndOf="@+id/textInputLayout4"
-        app:layout_constraintStart_toStartOf="@+id/textInputLayout4"
-        app:layout_constraintTop_toBottomOf="@+id/checkBox" />
+        android:textSize="24sp" />
 
     <TextView
         android:id="@+id/gologin"
         android:layout_width="250dp"
-        android:layout_height="0dp"
+        android:layout_height="wrap_content"
         android:gravity="center_horizontal"
         android:text="@string/Go_to_login"
         android:textColor="#FF3D00"
-        android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="@+id/add1"
-        app:layout_constraintStart_toStartOf="@+id/add1"
-        app:layout_constraintTop_toBottomOf="@+id/add1" />
+        android:textSize="24sp" />
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

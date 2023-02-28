@@ -12,11 +12,12 @@ import androidx.fragment.app.Fragment;
 
 import com.myproject.websitemanager.R;
 import com.myproject.websitemanager.ui.home.createwebsiteactivity.CreateWebsite;
+import com.myproject.websitemanager.view_main_activity.View_MainActivity;
 
 
 public class Home extends Fragment {
-    Activity customizelayoutactivity;
 
+    Activity customizelayoutactivity;
     View view;
     public Home() {
         // Required empty public constructor
@@ -29,6 +30,13 @@ public class Home extends Fragment {
         create.setOnClickListener(view -> {
             Intent create1 = new Intent(getActivity(), CreateWebsite.class);
             startActivity(create1);
+            customizelayoutactivity.finish();
+        });
+        Button viewWebpage =customizelayoutactivity.findViewById(R.id.webpage2_view_btn_id);
+        viewWebpage.setOnClickListener(view -> {
+            Intent viewwebpage = new Intent(getActivity(), View_MainActivity.class);
+            startActivity(viewwebpage);
+            customizelayoutactivity.finish();
         });
     }
 

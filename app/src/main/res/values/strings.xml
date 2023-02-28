@@ -81,22 +81,30 @@
     <string name="pick_color">Select Color</string>
     <string name="title_activity_create_website">CreateWebsite</string>
 
-    <string name="menu_webpage">Webpage</string>
-    <string name="menu_change_background_color">Colors</string>
-    <string name="menu_new_fontstyle">FontStyles</string>
-
-    <string name="lorem_ipsum_title">Lorem Ipsum"</string>
-    <string name="lorem_ipsum">Lorem Ipsum is simply placeholder text of the printing and
-        typesetting industry. Lorem Ipsum has been the industry\'s standard placeholder text ever
-        since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
-        type specimen book"
-    </string>
+    <string name="menu_webpage">Select Theme</string>
+    <string name="menu_change_background_color">Select Color</string>
+    <string name="menu_new_fontstyle">Select FontStyles</string>
     <string name="fab_content_description">Represents a view to invoke an action</string>
     <string name="image_view_item_transform_content_description">Represents an image view in the
         item
     </string>
     <string name="HorizontalView">HORIZONTALview</string>
     <string name="customlayoutstring">customlayoutstringvalue</string>
-    <string name="menu_OverView">OverView</string>
+    <string name="menu_OverView">Banner/others</string>
+    <string-array name="Font_Family">
+        <item>Select Heading Font</item>
+        <item>acme</item>
+        <item>alegreya_sc</item>
+        <item>alfa_slab_one</item>
+        <item>almendra_display</item>
+        <item>almendra_sc</item>
+        <item>asset</item>
+        <item>bangers</item>
+        <item>bevan</item>
+        <item>bungee_outline</item>
+        <item>bungee_shades</item>
+        <item>creepster</item>
+        <item>diplomata</item>
+    </string-array>
 
 </resources>

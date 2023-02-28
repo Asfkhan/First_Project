@@ -1,6 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <array name="preloaded_fonts" translatable="false">
-        <item>@font/almendra_display</item>
+        <item>Select Font Family</item>
+        <item>acme</item>
+        <item>aclonica</item>
+        <item>alfa_slab_one</item>
+        <item>almendra_display</item>
+        <item>architects_daughter</item>
+        <item>asset</item>
+        <item>bangers</item>
+        <item>big_shoulders_inline_display_semibold</item>
+        <item>changa_extralight</item>
+        <item>cherry_swash</item>
+        <item>cherry_swash_bold</item>
+        <item>creepter</item>
+        <item>diplomata</item>
+        <item>fontdiner</item>
     </array>
 </resources>

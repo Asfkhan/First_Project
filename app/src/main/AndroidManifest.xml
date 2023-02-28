@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
+
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -14,25 +16,34 @@
         android:theme="@style/Theme.WebSiteManager.NoActionBar"
         tools:targetApi="33">
         <activity
+            android:name=".view_webpage.View_Webpage"
+            android:exported="false" />
+        <activity
             android:name=".ui.home.createwebsiteactivity.CreateWebsite"
             android:exported="false"
             android:label="@string/title_activity_create_website"
             android:resizeableActivity="true"
-            android:theme="@style/Theme.WebSiteManager.NoActionBar.NoActionBar"
-            tools:targetApi="24">
+            android:theme="@style/Theme.WebSiteManager.NoActionBar.NoActionBar">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".colorPreview.ColorPreviewPage"
+            android:name=".webpage.WebPage"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".color_opt_activity.Color_opt_activity"
+            android:name=".view_main_activity.View_MainActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".webpage2.WebPage2"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"

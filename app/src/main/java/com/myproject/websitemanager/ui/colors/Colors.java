@@ -11,15 +11,13 @@ import android.widget.Button;
 import androidx.fragment.app.Fragment;
 
 import com.myproject.websitemanager.R;
-import com.myproject.websitemanager.color_opt_activity.Color_opt_activity;
+import com.myproject.websitemanager.webpage.WebPage;
 
 
 public class Colors extends Fragment {
 
 View view;
 Activity aage;
-
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,Bundle savedInstanceState) {
         aage = getActivity();
@@ -32,7 +30,7 @@ Activity aage;
         super.onStart();
         Button btn = aage.findViewById(R.id.coloractivityid);
         btn.setOnClickListener(view -> {
-            Intent aagechl = new Intent(aage,Color_opt_activity.class);
+            Intent aagechl = new Intent(aage, WebPage.class);
             startActivity(aagechl);
         });
     }

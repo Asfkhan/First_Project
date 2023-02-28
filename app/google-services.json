@@ -1,33 +1,33 @@
 {
   "project_info": {
-    "project_number": "531890510793",
-    "project_id": "new-web-site-manager",
-    "storage_bucket": "new-web-site-manager.appspot.com"
+    "project_number": "196165275195",
+    "project_id": "websitemanager-efd1f",
+    "storage_bucket": "websitemanager-efd1f.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:531890510793:android:5b853f79903b05aee96618",
+        "mobilesdk_app_id": "1:196165275195:android:b576f85d90b5f75f62d61e",
         "android_client_info": {
           "package_name": "com.myproject.websitemanager"
         }
       },
       "oauth_client": [
         {
-          "client_id": "531890510793-t270vmpp5esn4b34v05hqkqcnh4l0nug.apps.googleusercontent.com",
+          "client_id": "196165275195-vja86cqk2gd53fkmoobp6t86lv79njij.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyArvJGYOm97r77Kpn5q_KloEaDRYWxgMPY"
+          "current_key": "AIzaSyCHceDcL2akp9QLrKl0LAJpLjEHbjNKCNo"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "531890510793-t270vmpp5esn4b34v05hqkqcnh4l0nug.apps.googleusercontent.com",
+              "client_id": "196165275195-vja86cqk2gd53fkmoobp6t86lv79njij.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

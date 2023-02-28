@@ -17,11 +17,21 @@ public class OverView extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
 
-        binding = FragmentOverviewBinding.inflate(inflater, container, false);
+        binding = com.myproject.websitemanager.databinding.FragmentOverviewBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
-
         return root;
+    }
+
+
+    @Override
+    public void onPause() {
+        super.onPause();
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
     }
 
     @Override

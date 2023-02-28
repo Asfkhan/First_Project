@@ -1,9 +1,11 @@
 package com.myproject.websitemanager.ui.home.createwebsiteactivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
@@ -12,7 +14,7 @@ import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationView;
-import com.google.android.material.snackbar.Snackbar;
+import com.myproject.websitemanager.MainActivity;
 import com.myproject.websitemanager.R;
 import com.myproject.websitemanager.databinding.ActivityCreateWebsiteBinding;
 
@@ -21,38 +23,41 @@ public class CreateWebsite extends AppCompatActivity {
     private AppBarConfiguration mAppBarConfiguration;
 
     @Override
+    public void onBackPressed() {
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setMessage("Do You Want to Exit")
+                .setPositiveButton("Yes", (dialogInterface, i) -> {
+                    Intent iback = new Intent(this, MainActivity.class);
+                    startActivity(iback);
+                }).setNegativeButton("NO", (dialogInterface, i) -> dialogInterface.cancel());
+        builder.create();
+        builder.show();
+    }
+
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         ActivityCreateWebsiteBinding binding = ActivityCreateWebsiteBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
-
-        setSupportActionBar(binding.appBarCreateWebsite.toolbar);
-        if (binding.appBarCreateWebsite.fab != null) {
-            binding.appBarCreateWebsite.fab.setOnClickListener(view -> Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                    .setAction("Action", null).show());
-        }
+        setSupportActionBar(binding.appBarCreateWebsite.createWebsiteToolbarId);
         NavHostFragment navHostFragment = (NavHostFragment) getSupportFragmentManager().findFragmentById(R.id.nav_host_fragment_content_create_website);
         assert navHostFragment != null;
         NavController navController = navHostFragment.getNavController();
 
         NavigationView navigationView = binding.appBarCreateWebsite.coordinatorLayout;
-        if (navigationView != null) {
-            mAppBarConfiguration = new AppBarConfiguration.Builder(
-                    R.id.nav_first_webpage, R.id.nav_create_color, R.id.nav_new_font, R.id.nav_overview)
-                    .setOpenableLayout(binding.drawerLayout)
-                    .build();
-            NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
-            NavigationUI.setupWithNavController(navigationView, navController);
-        }
+        mAppBarConfiguration = new AppBarConfiguration.Builder(
+              R.id.nav_first_webpage, R.id.nav_create_color, R.id.nav_new_font, R.id.nav_overview)
+                .setOpenableLayout(binding.drawerLayout)
+                .build();
+        NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
+        NavigationUI.setupWithNavController(navigationView, navController);
 
         BottomNavigationView bottomNavigationView = binding.appBarCreateWebsite.contentCreateWebsite.bottomNavView;
-        if (bottomNavigationView != null) {
-            mAppBarConfiguration = new AppBarConfiguration.Builder(
-                    R.id.nav_first_webpage, R.id.nav_create_color, R.id.nav_new_font)
-                    .build();
-            NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
-            NavigationUI.setupWithNavController(bottomNavigationView, navController);
-        }
+        mAppBarConfiguration = new AppBarConfiguration.Builder(
+                R.id.nav_first_webpage, R.id.nav_create_color, R.id.nav_new_font)
+                .build();
+        NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
+        NavigationUI.setupWithNavController(bottomNavigationView, navController);
     }
 
     @Override

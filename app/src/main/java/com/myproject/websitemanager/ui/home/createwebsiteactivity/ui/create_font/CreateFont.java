@@ -8,17 +8,17 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 
-import com.myproject.websitemanager.databinding.FragmentFontsBinding;
+import com.myproject.websitemanager.databinding.CreateFontsBinding;
 
 public class CreateFont extends Fragment {
 
-    private FragmentFontsBinding binding;
+    private CreateFontsBinding binding;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
 
 
-        binding =FragmentFontsBinding.inflate(inflater, container, false);
+        binding =CreateFontsBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
 

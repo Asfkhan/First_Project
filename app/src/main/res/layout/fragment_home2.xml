@@ -4,50 +4,55 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFFFF"
+    android:background="@drawable/side_nav_bar"
     android:fitsSystemWindows="true"
     android:orientation="vertical"
     tools:context=".ui.home.Home"
-    tools:ignore="HardcodedText"
-    >
+    tools:ignore="HardcodedText">
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="match_parent"
         android:layout_height="150dp"
+        android:layout_gravity="center|center_horizontal"
+        android:layout_marginTop="190dp"
         android:fontFamily="cursive"
         android:gravity="center_horizontal"
         android:padding="50dp"
         android:text="@string/app_daily_quote"
-        android:textColor="#338637"
+        android:textColor="#1B2D6E"
         android:textSize="20sp"
-        android:textStyle="italic" />
-
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_gravity="center"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/Step1"
-        android:textColor="#DD2C00"
-        android:textSize="20sp" />
+        android:textStyle="bold" />
 
     <Button
         android:id="@+id/createwebsiteid"
-        android:layout_width="260dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
+        android:layout_margin="10dp"
         android:backgroundTint="@color/orange"
         android:text="CREATE WEBSITE"
         android:textColor="@color/white" />
 
     <Button
         android:id="@+id/managewebsiteid"
-        android:layout_gravity="center"
-        android:textColor="@color/white"
-        android:backgroundTint="@color/Morning_glory"
-        android:layout_width="280dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="MANAGE WEBSITE" />
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:backgroundTint="@color/app_logo_background"
+        android:text="MANAGE WEBSITE"
+        android:textColor="#303F9F" />
+
+    <Button
+        android:id="@+id/webpage2_view_btn_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:backgroundTint="#388E3C"
+        android:gravity="center|start"
+        android:text="VIEW YOUR WEBSITE"
+        app:icon="@drawable/ic_baseline_preview_24" />
 
 </LinearLayout>

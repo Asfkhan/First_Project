@@ -4,6 +4,7 @@
     tools:showIn="navigation_view">
 
     <group android:checkableBehavior="single">
+
         <item
             android:id="@+id/nav_first_webpage"
             android:icon="@drawable/ic_baseline_web_24"
@@ -12,7 +13,7 @@
         <item
             android:id="@+id/nav_create_color"
             android:icon="@drawable/ic_baseline_color_lens_24"
-            android:title="@string/menu_colour" />
+            android:title="@string/menu_change_background_color" />
         <item
             android:id="@+id/nav_new_font"
             android:icon="@drawable/ic_baseline_font_download_24"

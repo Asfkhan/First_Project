@@ -5,7 +5,6 @@
     android:id="@+id/coordinator_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFFFF"
     android:fitsSystemWindows="true"
     tools:context=".ui.home.createwebsiteactivity.CreateWebsite">
 
@@ -14,36 +13,38 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_gravity="center_horizontal"
-        android:background="@color/white"
+        android:background="@drawable/side_nav_bar"
         android:paddingTop="30dp"
         android:theme="@style/Theme.WebSiteManager.NoActionBar.AppBarOverlay">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:background="@color/orange"
+            android:background="@drawable/side_nav_bar"
             android:orientation="horizontal">
 
             <ImageView
                 android:id="@+id/imageView6"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:layout_margin="10dp"
                 app:srcCompat="@drawable/ic_baseline_home_24" />
 
             <ImageView
                 android:id="@+id/imageView7"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:layout_margin="10dp"
                 app:srcCompat="@drawable/ic_baseline_save_alt_24" />
 
             <androidx.appcompat.widget.Toolbar
-                android:id="@+id/toolbar"
+                android:id="@+id/create_website_toolbar_id"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_gravity="end"
-                android:background="@color/orange"
+                android:background="@drawable/side_nav_bar"
                 app:buttonGravity="center_vertical"
                 app:popupTheme="@style/Theme.WebSiteManager.NoActionBar.PopupOverlay" />
 
@@ -58,20 +59,6 @@
                 android:id="@+id/content_create_website"
                 layout="@layout/content_create_website" />
 
-            <androidx.coordinatorlayout.widget.CoordinatorLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@android:color/transparent">
-
-                <com.google.android.material.floatingactionbutton.FloatingActionButton
-                    android:id="@+id/fab"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="bottom|end"
-                    android:layout_margin="@dimen/fab_margin"
-                    android:contentDescription="@string/fab_content_description"
-                    app:srcCompat="@android:drawable/ic_dialog_email" />
-            </androidx.coordinatorlayout.widget.CoordinatorLayout>
         </androidx.coordinatorlayout.widget.CoordinatorLayout>
 
 
