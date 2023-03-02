@@ -46,7 +46,7 @@ public class LayoutAdapter extends RecyclerView.Adapter<LayoutAdapter.SliderView
 
         holder.setItemClickedSelected((view, position1) -> {
             row = position1;
-            notifyDataSetChanged();
+            notifyItemChanged(position);
         });
         if(row == position){
                     Intent i = new Intent(context, View_Webpage.class);

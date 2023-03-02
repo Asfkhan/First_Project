@@ -2,7 +2,6 @@ package com.myproject.websitemanager;
 
 
 public class DataStoredClass {
-    private String headingFont;
     private String toptexteditTxt;
     private String headingeditText;
     private String descripeditText;

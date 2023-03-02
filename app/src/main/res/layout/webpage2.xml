@@ -9,376 +9,385 @@
     android:orientation="vertical"
     tools:ignore="HardcodedText">
 
-    <LinearLayout
-        android:id="@+id/page_to_create_id"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:background="#FFFFFF"
-        android:orientation="vertical">
+        android:layout_height="match_parent">
 
         <LinearLayout
-            android:id="@+id/webpage2_heading_section_id"
+            android:id="@+id/page_to_create_id"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/app_logo_background"
-            android:orientation="vertical">
-
-
-            <LinearLayout
-                android:id="@+id/toptext_id"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical">
-
-                <TextView
-                    android:id="@+id/toptext_webpage2_id"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:ellipsize="marquee"
-                    android:gravity="center_horizontal"
-                    android:marqueeRepeatLimit="marquee_forever"
-                    android:scrollHorizontally="true"
-                    android:singleLine="true"
-                    android:text="HEY! THIS IS MY WEBSITE AND DETAILS OF IT ARE SHOWN BELOW"
-                    tools:ignore="TextContrastCheck" />
-            </LinearLayout>
-
+            android:background="#FFFFFF"
+            android:orientation="vertical"
+            tools:ignore="UselessParent">
 
             <LinearLayout
-                android:id="@+id/show_hidden_layout_id"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:orientation="vertical">
-
-                <TextView
-                    android:id="@+id/webpage2heading_id"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_margin="20dp"
-                    android:layout_weight="1"
-                    android:gravity="center"
-                    android:text="Set Heading"
-                    android:textColor="@color/black"
-                    android:textFontWeight="1000"
-                    android:textSize="20sp"
-                    android:textStyle="bold" />
-
-            </LinearLayout>
-
-        </LinearLayout>
-
-        <ScrollView
-            android:id="@+id/webpage_scroll_background_id"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            tools:ignore="SpeakableTextPresentCheck">
-
-            <LinearLayout
-                android:id="@+id/new_Webpage_TableSection_id"
+                android:id="@+id/webpage2_heading_section_id"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="@color/app_logo_background"
                 android:orientation="vertical">
 
-
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="203dp">
-
-                    <ImageView
-                        android:id="@+id/newBanner_id"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_gravity="center"
-                        tools:srcCompat="@drawable/webpagebanner1" />
-                </RelativeLayout>
-
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-
-                    <ImageView
-                        android:id="@+id/post1_id"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center|center_horizontal"
-                        app:srcCompat="@drawable/ic_baseline_image_24" />
-
-                    <androidx.cardview.widget.CardView
-                        android:id="@+id/section1_id"
-                        android:layout_width="match_parent"
-                        android:layout_height="150dp"
-                        android:layout_below="@id/post1_id">
-
-                        <LinearLayout
-                            android:id="@+id/description_show_box_id"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center_horizontal|center"
-                            android:layout_weight="1"
-                            android:orientation="vertical">
-
-                            <TextView
-                                android:id="@+id/newDescription1_id"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_gravity="center"
-                                android:layout_weight="1"
-                                android:gravity="center"
-                                android:text="Description" />
-                        </LinearLayout>
-                    </androidx.cardview.widget.CardView>
-
-                    <ImageView
-                        android:id="@+id/post2_id"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_below="@id/section1_id"
-                        android:layout_gravity="center"
-                        app:srcCompat="@drawable/ic_baseline_image_24" />
-
-                    <androidx.cardview.widget.CardView
-                        android:id="@+id/section2_id"
-                        android:layout_width="match_parent"
-                        android:layout_height="150dp"
-                        android:layout_below="@id/post2_id">
-
-                        <LinearLayout
-                            android:id="@+id/description2_layout_id"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center_horizontal|center"
-                            android:layout_weight="1"
-                            android:orientation="vertical">
-
-                            <TextView
-                                android:id="@+id/newDescription2_id"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_weight="1"
-                                android:gravity="center"
-                                android:text="Description" />
-                        </LinearLayout>
-                    </androidx.cardview.widget.CardView>
-
-                </RelativeLayout>
 
                 <LinearLayout
+                    android:id="@+id/toptext_id"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="vertical">
 
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:orientation="vertical">
-
-                        <TextView
-                            android:id="@+id/textView7"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="10dp"
-                            android:fontFamily="sans-serif-condensed-medium"
-                            android:text="About Us"
-                            android:textSize="24sp" />
-
-                    </LinearLayout>
-
                     <TextView
-                        android:id="@+id/textView10"
+                        android:id="@+id/toptext_webpage2_id"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:ellipsize="marquee"
+                        android:gravity="center_horizontal"
+                        android:marqueeRepeatLimit="marquee_forever"
+                        android:scrollHorizontally="true"
                         android:singleLine="true"
-                        android:text="____________________________________________________________" />
-
-
-                    <LinearLayout
-                        android:id="@+id/about_us_layout_id"
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:layout_gravity="center"
-                        android:orientation="vertical">
-
-                        <TextView
-                            android:id="@+id/new_about_us_id"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:gravity="center"
-                            android:text="Write SomeThing Here" />
-                    </LinearLayout>
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="10dp"
-                        android:fontFamily="sans-serif-condensed-medium"
-                        android:text="Contact Us"
-                        android:textSize="24sp" />
-
-                    <TextView
-                        android:id="@+id/textView8"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:singleLine="true"
-                        android:text="____________________________________________________________"
-                        android:textSize="14sp" />
-
-                    <LinearLayout
-                        android:id="@+id/contact_us_layout_id"
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:layout_gravity="center"
-                        android:orientation="vertical">
-
-                        <TextView
-                            android:id="@+id/new_contact_id"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:gravity="center"
-                            android:text="Write SomeThing Here" />
-
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:id="@+id/gmail_layout_id"
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:layout_gravity="center"
-                        android:layout_marginTop="10dp"
-                        android:orientation="vertical">
-
-                        <TextView
-                            android:id="@+id/new_gmail_id"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:gravity="center"
-                            android:text="Write SomeThing Here" />
-                    </LinearLayout>
-
-                    <TextView
-                        android:id="@+id/textView9"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="10dp"
-                        android:fontFamily="sans-serif-condensed-medium"
-                        android:text="Social"
-                        android:textSize="24sp" />
-
-                    <TextView
-                        android:id="@+id/textView6"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:singleLine="true"
-                        android:text="____________________________________________________________"
-                        android:textSize="14sp" />
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal"
-                        android:paddingBottom="50dp">
-
-                        <androidx.cardview.widget.CardView
-                            android:layout_width="35dp"
-                            android:layout_height="35dp"
-                            android:layout_gravity="center|center_horizontal"
-                            android:layout_marginStart="20dp"
-                            android:layout_marginEnd="20dp"
-                            android:padding="20dp"
-                            app:cardBackgroundColor="#FFFFFF"
-                            app:cardCornerRadius="15dp">
-
-                            <ImageView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_gravity="center|center_horizontal"
-                                android:layout_weight="1"
-                                app:srcCompat="@drawable/instagramlogo" />
-                        </androidx.cardview.widget.CardView>
-
-                        <androidx.cardview.widget.CardView
-                            android:layout_width="35dp"
-                            android:layout_height="35dp"
-                            android:layout_gravity="center"
-                            android:layout_marginStart="20dp"
-                            android:layout_marginEnd="20dp"
-                            app:cardCornerRadius="20dp">
-
-                            <ImageView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_gravity="center|center_horizontal"
-                                android:layout_weight="1"
-                                app:srcCompat="@drawable/twitterlogo" />
-                        </androidx.cardview.widget.CardView>
-
-                        <androidx.cardview.widget.CardView
-                            android:layout_width="35dp"
-                            android:layout_height="35dp"
-                            android:layout_gravity="center"
-                            android:layout_marginStart="20dp"
-                            android:layout_marginEnd="20dp"
-                            app:cardCornerRadius="20dp">
-
-                            <ImageView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_gravity="center|center_horizontal"
-                                android:layout_weight="1"
-                                app:srcCompat="@drawable/whatsapplogo" />
-                        </androidx.cardview.widget.CardView>
-
-                        <TextView
-                            android:id="@+id/textView2"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:padding="20dp"
-                            android:text="CopyRight Reserved Proudly Created By Website Manager apk "
-                            android:textSize="8sp" />
-
-                    </LinearLayout>
-
-
+                        android:text="HEY! THIS IS MY WEBSITE AND DETAILS OF IT ARE SHOWN BELOW"
+                        tools:ignore="TextContrastCheck" />
                 </LinearLayout>
 
+
                 <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="150dp"
-                    android:layout_weight="1"
+                    android:id="@+id/show_hidden_layout_WebPage2_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
                     android:orientation="vertical">
 
                     <TextView
-                        android:id="@+id/new_Insta_link_id"
-                        android:layout_width="match_parent"
+                        android:id="@+id/webpage2heading_id"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="20dp"
+                        android:layout_weight="1"
                         android:gravity="center"
-                        android:text="Intsagram Account Link" />
+                        android:text="Set Heading"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        tools:ignore="InefficientWeight" />
 
-                    <TextView
-                        android:id="@+id/new_twitter_link_id"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:gravity="center"
-                        android:text="Twitter Account Link" />
-
-                    <TextView
-                        android:id="@+id/new_whatsapp_link_id"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:gravity="center"
-                        android:text="Whatsapp Account Link" />
                 </LinearLayout>
+
             </LinearLayout>
-        </ScrollView>
 
-    </LinearLayout>
+            <ScrollView
+                android:id="@+id/webpage_scroll_background_id"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:ignore="SpeakableTextPresentCheck">
 
+                <LinearLayout
+                    android:id="@+id/new_Webpage_TableSection_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="203dp">
+
+                        <ImageView
+                            android:id="@+id/newBanner_id"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            tools:ignore="ContentDescription"
+                            tools:srcCompat="@drawable/ic_gallery_black_24dp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/post1_id"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|center_horizontal"
+                            app:srcCompat="@drawable/ic_baseline_image_24"
+                            tools:ignore="ContentDescription,ImageContrastCheck" />
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/section1_id"
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:layout_below="@id/post1_id">
+
+                            <LinearLayout
+                                android:id="@+id/description_show_box_id"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal|center"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/newDescription1_id"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:text="Description" />
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <ImageView
+                            android:id="@+id/post2_id"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/section1_id"
+                            android:layout_gravity="center"
+                            app:srcCompat="@drawable/ic_baseline_image_24"
+                            tools:ignore="ContentDescription" />
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/section2_id"
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:layout_below="@id/post2_id">
+
+                            <LinearLayout
+                                android:id="@+id/description2_layout_id"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal|center"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/newDescription2_id"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:text="Description"
+                                    tools:ignore="InefficientWeight" />
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/textView7"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="10dp"
+                                android:fontFamily="sans-serif-condensed-medium"
+                                android:text="About Us"
+                                android:textSize="24sp" />
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/textView10"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:singleLine="true"
+                            android:text="____________________________________________________________" />
+
+
+                        <LinearLayout
+                            android:id="@+id/about_us_layout_id"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/new_about_us_id"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="Write SomeThing Here" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:fontFamily="sans-serif-condensed-medium"
+                            android:text="Contact Us"
+                            android:textSize="24sp" />
+
+                        <TextView
+                            android:id="@+id/textView8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:singleLine="true"
+                            android:text="____________________________________________________________"
+                            android:textSize="14sp" />
+
+                        <LinearLayout
+                            android:id="@+id/contact_us_layout_id"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/new_contact_id"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:text="Write SomeThing Here" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/gmail_layout_id"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/new_gmail_id"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:text="Write SomeThing Here" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/textView9"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:fontFamily="sans-serif-condensed-medium"
+                            android:text="Social"
+                            android:textSize="24sp" />
+
+                        <TextView
+                            android:id="@+id/textView6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:singleLine="true"
+                            android:text="____________________________________________________________"
+                            android:textSize="14sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingBottom="50dp">
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                android:layout_gravity="center|center_horizontal"
+                                android:layout_marginStart="20dp"
+                                android:layout_marginEnd="20dp"
+                                android:padding="20dp"
+                                app:cardBackgroundColor="#FFFFFF"
+                                app:cardCornerRadius="15dp">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center|center_horizontal"
+                                    android:layout_weight="1"
+                                    app:srcCompat="@drawable/instagramlogo"
+                                    tools:ignore="ContentDescription" />
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="20dp"
+                                android:layout_marginEnd="20dp"
+                                app:cardCornerRadius="20dp">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center|center_horizontal"
+                                    android:layout_weight="1"
+                                    app:srcCompat="@drawable/twitterlogo"
+                                    tools:ignore="ContentDescription" />
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="20dp"
+                                android:layout_marginEnd="20dp"
+                                app:cardCornerRadius="20dp">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center|center_horizontal"
+                                    android:layout_weight="1"
+                                    app:srcCompat="@drawable/whatsapplogo"
+                                    tools:ignore="ContentDescription" />
+                            </androidx.cardview.widget.CardView>
+
+                            <TextView
+                                android:id="@+id/textView2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="20dp"
+                                android:text="CopyRight Reserved Proudly Created By Website Manager apk "
+                                android:textSize="8sp"
+                                tools:ignore="SmallSp" />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/new_Insta_link_id"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Intsagram Account Link" />
+
+                        <TextView
+                            android:id="@+id/new_twitter_link_id"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Twitter Account Link" />
+
+                        <TextView
+                            android:id="@+id/new_whatsapp_link_id"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Whatsapp Account Link" />
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+
+        </LinearLayout>
+    </ScrollView>
 
 
 </LinearLayout>

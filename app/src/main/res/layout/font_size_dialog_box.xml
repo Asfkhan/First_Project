@@ -5,6 +5,7 @@
     android:layout_height="match_parent"
     android:layout_gravity="center_horizontal"
     android:gravity="center"
+    android:id="@+id/edittextroot_id"
     android:orientation="vertical"
     tools:ignore="HardcodedText">
 

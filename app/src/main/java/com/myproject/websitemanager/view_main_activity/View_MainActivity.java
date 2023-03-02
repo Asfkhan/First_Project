@@ -28,6 +28,7 @@ public class View_MainActivity extends AppCompatActivity {
     List<DataStoredClass> dataStoredClassList;
     DatabaseReference databaseReference;
     ValueEventListener valueEventListener;
+    int position = -1;
 
     @Override
     public void onBackPressed() {
@@ -73,7 +74,7 @@ public class View_MainActivity extends AppCompatActivity {
                     DataStoredClass dataStoredClass1 = itemShot.getValue(DataStoredClass.class);
                     dataStoredClassList.add(dataStoredClass1);
                 }
-                layoutAdapter.notifyDataSetChanged();
+                layoutAdapter.notifyItemChanged(position);
                 dialog.dismiss();
             }
 

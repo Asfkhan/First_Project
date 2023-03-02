@@ -18,9 +18,8 @@ public class OverView extends Fragment {
                              ViewGroup container, Bundle savedInstanceState) {
 
         binding = com.myproject.websitemanager.databinding.FragmentOverviewBinding.inflate(inflater, container, false);
-        View root = binding.getRoot();
 
-        return root;
+        return binding.getRoot();
     }
 
 

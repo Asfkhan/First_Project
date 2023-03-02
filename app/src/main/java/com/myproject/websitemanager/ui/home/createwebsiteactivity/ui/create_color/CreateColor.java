@@ -14,23 +14,18 @@ import androidx.fragment.app.Fragment;
 import com.myproject.websitemanager.R;
 import com.myproject.websitemanager.webpage.WebPage;
 public class CreateColor extends Fragment{
-   private Button fontStyle;
-   private int color;
     Activity createcolor;
     View view;
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         view = inflater.inflate(R.layout.create_colors, container, false);
         createcolor = getActivity();
         Button background = view.findViewById(R.id.background_color_id);
-        background.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent i = new Intent(getActivity(),WebPage.class);
-                startActivity(i);
-                Toast.makeText(createcolor,"Select Heading to change color",Toast.LENGTH_LONG).show();
-            }
+        background.setOnClickListener(view -> {
+            Intent i = new Intent(getActivity(),WebPage.class);
+            startActivity(i);
+            Toast.makeText(createcolor,"Select Heading to change color",Toast.LENGTH_LONG).show();
         });
-        fontStyle = view.findViewById(R.id.set_fontStyle_color_id);
+        Button fontStyle = view.findViewById(R.id.set_fontStyle_color_id);
         fontStyle.setOnClickListener(view -> {
             Intent i = new Intent(getActivity(),WebPage.class);
             startActivity(i);

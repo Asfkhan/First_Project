@@ -26,7 +26,6 @@ public class SetTheme extends Fragment {
         root = inflater.inflate(R.layout.set_theme, container, false);
         selectedactivity = getActivity();
         ViewPager2 viewPager2 = root.findViewById(R.id.viewPagerImageSlider);
-             List<WebPageModel> webPageModels = new ArrayList<>();
              webPageModels.add(new WebPageModel(R.drawable.template1,"Helmet Store",true));
             webPageModels.add(new WebPageModel(R.drawable.template2,"Shopping Store",true));
              webPageModels.add(new WebPageModel(R.drawable.template3,"Business Profile",true));

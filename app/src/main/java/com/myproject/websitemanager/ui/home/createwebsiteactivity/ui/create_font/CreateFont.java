@@ -19,10 +19,9 @@ public class CreateFont extends Fragment {
 
 
         binding =CreateFontsBinding.inflate(inflater, container, false);
-        View root = binding.getRoot();
 
 
-        return root;
+        return binding.getRoot();
     }
 
     @Override

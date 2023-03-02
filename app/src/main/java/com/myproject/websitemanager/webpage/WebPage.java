@@ -45,7 +45,13 @@ public class WebPage extends AppCompatActivity {
    private AlertDialog myalertDialog;
   private LinearLayout hidden_layout;
    private SeekBar seekBar ;
-   private Spinner spinner;
+
+
+
+    private Spinner spinner;
+
+
+
     EditText toptexteditTxt,headingeditText,
             descripeditText,description2edit,about_edittxt_variable,
             contact_us_editxt_var, gmaildedittxt_var,instaEditText_Var
@@ -64,11 +70,12 @@ public class WebPage extends AppCompatActivity {
     String bannerImgURL,post1imgURL,post2imgURL;
     LinearLayout headinglayout;
 
-    Bundle headFontBundle = new Bundle();
+ //   Bundle headFontBundle = new Bundle();
     LinearLayout tableLayout;
-    String headingTxtColor,headingFont,headingSize,headingSectionColor,tableSectionColor,newlayout1Color
+    String headingTxtColor,headingSize,headingSectionColor,tableSectionColor,newlayout1Color
             ,newlayout2Color;
-
+    Bundle headingtxtBundle = new Bundle();
+    ArrayAdapter<String> stringArrayAdapter;
     @Override
     public void onBackPressed() {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
@@ -80,6 +87,7 @@ public class WebPage extends AppCompatActivity {
         builder.create();
         builder.show();
     }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -143,6 +151,8 @@ public class WebPage extends AppCompatActivity {
            }
 
         });
+
+
         Button createbtn = findViewById(R.id.create_btn_id);
         createbtn.setOnClickListener(v -> {
             Dialog dialog = new Dialog(WebPage.this);
@@ -152,19 +162,13 @@ public class WebPage extends AppCompatActivity {
             }*/
             dialog.show();
             try {
-
                 saveData();
                 Bundle bundle = new Bundle();
                 String toptextview = toptexteditTxt.getText().toString();
                 bundle.putString("topText", toptextview);
 
-                Bundle headingtxtBundle = new Bundle();
                 String headingtextFont = headingeditText.getText().toString();
                 headingtxtBundle.putString("Heading",headingtextFont);
-
-
-
-
 
                 Bundle headingtextsizebundle = new Bundle();
                 headingtextsizebundle.putInt("HeadingSize", seekBar.getProgress());
@@ -209,8 +213,9 @@ public class WebPage extends AppCompatActivity {
 
                 Intent i = new Intent(WebPage.this, WebPage2.class);
                 i.putExtras(bundle);
+                i.putExtras(headingtxtBundle);
+              //  i.putExtras(headinFont);
                 i.putExtras(headingtextsizebundle);
-                i.putExtras(headFontBundle);
                 i.putExtras(headintxtcolorBundle);
                 i.putExtras(headinSectionColorBundle);
                 i.putExtras(tableSectionColorBundle);
@@ -625,10 +630,11 @@ public class WebPage extends AppCompatActivity {
        }
     }
     private void changefontFamily() {
-        ArrayAdapter<String> stringArrayAdapter = new ArrayAdapter<>(WebPage.this, android.R.layout.simple_spinner_item,
+        stringArrayAdapter = new ArrayAdapter<>(WebPage.this, android.R.layout.simple_spinner_item,
                 getResources().getStringArray(R.array.preloaded_fonts));
         stringArrayAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinner.setAdapter(stringArrayAdapter);
+
         spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
 
                 @Override
@@ -636,43 +642,42 @@ public class WebPage extends AppCompatActivity {
 
                     try{
                 if (position == 1) {
-                    headtext.setTypeface(ResourcesCompat.getFont(WebPage.this, R.font.bangers));
+                    headtext.setTypeface(ResourcesCompat.getFont(WebPage.this,R.font.bangers));
+
                 } else if (position == 2) {
-                    headtext.setTypeface(ResourcesCompat.getFont(WebPage.this, R.font.fontdiner_swanky));
+                    headtext.setTypeface(ResourcesCompat.getFont(WebPage.this,R.font.bangers));
                 } else if (position == 3) {
-                    headtext.setTypeface(ResourcesCompat.getFont(WebPage.this, R.font.acme));
+                    headtext.setTypeface(ResourcesCompat.getFont(WebPage.this,R.font.bangers));
                 } else if (position == 4) {
-                   headtext.setTypeface(ResourcesCompat.getFont(WebPage.this, R.font.asset));
+                    headtext.setTypeface(ResourcesCompat.getFont(WebPage.this,R.font.aclonica));
                 } else if (position == 5) {
-                    headtext.setTypeface(ResourcesCompat.getFont(WebPage.this, R.font.bangers));
+                    headtext.setTypeface(ResourcesCompat.getFont(WebPage.this,R.font.acme));
                 } else if (position == 6) {
-                  headtext.setTypeface(ResourcesCompat.getFont(WebPage.this, R.font.big_shoulders_stencil_display_semibold));
+                    headtext.setTypeface(ResourcesCompat.getFont(WebPage.this,R.font.alfa_slab_one));
                 } else if (position == 7) {
-                   headtext.setTypeface(ResourcesCompat.getFont(WebPage.this, R.font.alfa_slab_one));
+                    headtext.setTypeface(ResourcesCompat.getFont(WebPage.this,R.font.bangers));
                 } else if (position == 9) {
-                    headtext.setTypeface(ResourcesCompat.getFont(WebPage.this, R.font.cherry_swash_bold));
+                    headtext.setTypeface(ResourcesCompat.getFont(WebPage.this,R.font.big_shoulders_stencil_display_semibold));
                 }else if (position == 10) {
-                    headtext.setTypeface(ResourcesCompat.getFont(WebPage.this, R.font.aclonica));
+                    headtext.setTypeface(ResourcesCompat.getFont(WebPage.this,R.font.bungee_shade));
 
                 }else if (position == 11) {
-                    headtext.setTypeface(ResourcesCompat.getFont(WebPage.this, R.font.diplomata));
+                    headtext.setTypeface(ResourcesCompat.getFont(WebPage.this,R.font.cherry_swash_bold));
 
                 }else if (position == 12) {
-                    headtext.setTypeface(ResourcesCompat.getFont(WebPage.this, R.font.bungee_shade));
-
+                    headtext.setTypeface(ResourcesCompat.getFont(WebPage.this,R.font.cinzel_decorative_bold));
                 }else if (position == 13) {
-                    headtext.setTypeface(ResourcesCompat.getFont(WebPage.this, R.font.creepster));
-
+                    headtext.setTypeface(ResourcesCompat.getFont(WebPage.this,R.font.creepster));
                 }else if (position == 14) {
-                    headtext.setTypeface(ResourcesCompat.getFont(WebPage.this, R.font.cinzel_decorative_bold));
+                    headtext.setTypeface(ResourcesCompat.getFont(WebPage.this,R.font.diplomata));
 
                 }else if (position == 8) {
-                    headtext.setTypeface(ResourcesCompat.getFont(WebPage.this, R.font.fontdiner_swanky));
+                    headtext.setTypeface(ResourcesCompat.getFont(WebPage.this,R.font.fontdiner_swanky));
 
                 }
 
                 }catch(Exception e){
-                        Toast.makeText(WebPage.this, " "+e, Toast.LENGTH_SHORT).show();
+                        Toast.makeText(WebPage.this, " " + e, Toast.LENGTH_SHORT).show();
 
                     }
             }
@@ -711,7 +716,7 @@ public class WebPage extends AppCompatActivity {
 
     private void headingfontsizealertdialog() {
         AlertDialog.Builder builder = new AlertDialog.Builder(WebPage.this);
-        View mview = getLayoutInflater().inflate(R.layout.font_size_dialog_box,null);
+        View mview = getLayoutInflater().inflate(R.layout.font_size_dialog_box,findViewById(R.id.edittextroot_id));
         headingeditText = mview.findViewById(R.id.heading_edit_id);
         builder.setView(mview);
         builder.setTitle("Your Heading Text")

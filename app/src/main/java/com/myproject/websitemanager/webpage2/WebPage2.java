@@ -12,16 +12,27 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 
 import com.myproject.websitemanager.R;
-import com.myproject.websitemanager.databinding.WebpageBinding;
 import com.myproject.websitemanager.view_main_activity.View_MainActivity;
 
 public class WebPage2 extends AppCompatActivity {
+
+    public WebPage2() {
+    }
+
+    public WebPage2(int contentLayoutId) {
+        super(contentLayoutId);
+    }
+
+    public TextView getNewheading() {
+        return newheading;
+    }
+
     LinearLayout headingSectionLayout;
     Intent intent;
+    LinearLayout linearLayout;
     ImageView newbanner,newpost1,newpost2;
     TextView newheading,description1,description2,newAboutUs,newContact,newGmail,newInsta,newTwitter,newWhatsapp;
 
-    WebpageBinding webpageBinding;
     @Override
     public void onBackPressed() {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
@@ -41,7 +52,9 @@ public class WebPage2 extends AppCompatActivity {
         newbanner = findViewById(R.id.newBanner_id);
         newpost1 = findViewById(R.id.post1_id);
         newpost2 = findViewById(R.id.post2_id);
-
+        newheading = findViewById(R.id.webpage2heading_id);
+        linearLayout = findViewById(R.id.show_hidden_layout_WebPage2_id);
+       // layoutinflated();
             Bundle bundle = getIntent().getExtras();
             String value = bundle.getString("topText");
             TextView newtoptext = findViewById(R.id.toptext_webpage2_id);
@@ -49,10 +62,9 @@ public class WebPage2 extends AppCompatActivity {
             newtoptext.setText(value);
 
 
-               Intent intent1 = getIntent();
+              Intent intent1 = getIntent();
                 String headingvalue = intent1.getStringExtra("Heading");
-                newheading = findViewById(R.id.webpage2heading_id);
-                newheading.setText(headingvalue);
+                  newheading.setText(headingvalue);
 
                 Bundle headBundle = getIntent().getExtras();
                 int headindSize = headBundle.getInt("HeadingSize");
@@ -138,6 +150,15 @@ public class WebPage2 extends AppCompatActivity {
 
 
     }
+
+   /* private void layoutinflated() {
+        View view1 = getLayoutInflater().inflate(R.layout.webpage,findViewById(R.id.show_hidden_layout_id));
+        TextView txtFont = view1.findViewById(R.id.webpage1Themefont);
+        WebPage webPage = new WebPage();
+        Typeface typeface = webPage.getHeadtext().getTypeface();
+        txtFont.setTypeface(typeface);
+        newheading.setText(txtFont.getText());
+    }*/
 
 
 }

@@ -106,5 +106,25 @@
         <item>creepster</item>
         <item>diplomata</item>
     </string-array>
+    <string-array name="Manage_Website">
+        <item>Select To Manage</item>
+        <item>Change Top Scrolling Text Colour</item>
+        <item>Insert Heading Background Image</item>
+        <item>Insert Banner Background Image</item>
+        <item>Add Link To Tittle In Banner Section </item>
+        <item>Insert Post 1 Layout Background Image</item>
+        <item>Write Post 1 Title Description</item>
+        <item>Insert post 2 Background Image</item>
+        <item>Write Post 1 Title Description</item>
+        <item>Add New Post Layout </item>
+        <item>Give Post 1 Title</item>
+        <item>Write Post 1 Title Description</item>
+        <item>Pick New Post Layout Color</item>
+        <item>Insert New Post Layout Color</item>
+        <item>Insert About Us Section Background Image</item>
+        <item>Insert Contact Us Section Background Image</item>
+        <item>Insert Social Section Background Image</item>
+
+    </string-array>
 
 </resources>
