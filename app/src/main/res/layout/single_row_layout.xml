@@ -20,7 +20,8 @@
             android:layout_gravity="center|center_horizontal"
             android:layout_margin="20dp"
             android:contentDescription="TODO"
-            android:padding="20dp" />
+            android:padding="20dp"
+            tools:ignore="ContentDescription" />
 
         <TextView
             android:id="@+id/themename_id"

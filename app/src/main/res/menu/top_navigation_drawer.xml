@@ -9,16 +9,6 @@
             android:id="@+id/nav_first_webpage"
             android:icon="@drawable/ic_baseline_web_24"
             android:title="@string/menu_webpage" />
-
-        <item
-            android:id="@+id/nav_create_color"
-            android:icon="@drawable/ic_baseline_color_lens_24"
-            android:title="@string/menu_change_background_color" />
-        <item
-            android:id="@+id/nav_new_font"
-            android:icon="@drawable/ic_baseline_font_download_24"
-            android:title="@string/menu_font" />
-
         <item
             android:id="@+id/nav_overview"
             android:icon="@drawable/ic_baseline_preview_24"

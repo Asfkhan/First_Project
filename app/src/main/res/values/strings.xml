@@ -82,7 +82,7 @@
     <string name="title_activity_create_website">CreateWebsite</string>
 
     <string name="menu_webpage">Select Theme</string>
-    <string name="menu_change_background_color">Select Color</string>
+    <string name="menu_change_background_color">Select </string>
     <string name="menu_new_fontstyle">Select FontStyles</string>
     <string name="fab_content_description">Represents a view to invoke an action</string>
     <string name="image_view_item_transform_content_description">Represents an image view in the
@@ -90,7 +90,7 @@
     </string>
     <string name="HorizontalView">HORIZONTALview</string>
     <string name="customlayoutstring">customlayoutstringvalue</string>
-    <string name="menu_OverView">Banner/others</string>
+    <string name="menu_OverView">SETTING</string>
     <string-array name="Font_Family">
         <item>Select Heading Font</item>
         <item>acme</item>
@@ -108,22 +108,43 @@
     </string-array>
     <string-array name="Manage_Website">
         <item>Select To Manage</item>
+        <item>------------------------------------------------------</item>
         <item>Change Top Scrolling Text Colour</item>
-        <item>Insert Heading Background Image</item>
-        <item>Insert Banner Background Image</item>
-        <item>Add Link To Tittle In Banner Section </item>
-        <item>Insert Post 1 Layout Background Image</item>
+        <item>------------------------------------------------------</item>
+        <item>Write Banner Scrolling Description</item>
+        <item>Pick Banner Scrolling Color</item>
+        <item>Write Banner Title</item>
+        <item>Change Banner Title Color</item>
+        <item>Write Banner Description</item>
+        <item>Change Banner Description Color</item>
+        <item>Add Link To Title In Banner Section</item>
+        <item>------------------------------------------------------</item>
         <item>Write Post 1 Title Description</item>
-        <item>Insert post 2 Background Image</item>
-        <item>Write Post 1 Title Description</item>
-        <item>Add New Post Layout </item>
-        <item>Give Post 1 Title</item>
-        <item>Write Post 1 Title Description</item>
-        <item>Pick New Post Layout Color</item>
-        <item>Insert New Post Layout Color</item>
-        <item>Insert About Us Section Background Image</item>
-        <item>Insert Contact Us Section Background Image</item>
-        <item>Insert Social Section Background Image</item>
+        <item>Change Post 1 Title Color</item>
+        <item>Change Post 1 Description Color</item>
+        <item>------------------------------------------------------</item>
+        <item>Write Post 2 Title Description</item>
+        <item>Change Post 2 Title Color</item>
+        <item>Change Post 2 Description Color</item>
+        <item>------------------------------------------------------</item>
+        <item>Change About Us Title Colour</item>
+        <item>Change About Us Description Colour</item>
+        <item>------------------------------------------------------</item>
+       <item>Change Contact Us Title Color</item>
+        <item>Change Contact Us Description Colour</item>
+        <item>------------------------------------------------------</item>
+         <item>Change Social Title Colour</item>
+        <item>Change Social Section Color</item>
+        <item>------------------------------------------------------</item>
+        <item>Write New Post Title</item>
+       <item>Write New Post  Description</item>
+       <item>Pick New Post Layout Color</item>
+       <item>Pick New Post Title Color</item>
+      <item>Pick New Post Description Color</item>
+      <item>Add New Post</item>
+        <item>Add Delete Post</item>
+        <item>Delete All New Post</item>
+
 
     </string-array>
 

@@ -27,11 +27,7 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
-import com.myproject.websitemanager.ui.colors.Colors;
-import com.myproject.websitemanager.ui.finish_creation.Finish_Creation;
-import com.myproject.websitemanager.ui.fonts.Fonts;
 import com.myproject.websitemanager.ui.home.Home;
-import com.myproject.websitemanager.ui.template.Templates;
 
 public class MainActivity extends AppCompatActivity {
     DrawerLayout drawerLayout;
@@ -98,17 +94,7 @@ public class MainActivity extends AppCompatActivity {
                 int id = item.getItemId();
                 if (id == R.id.nav_home) {
                     loadFragment(new Home());
-                } else if (id == R.id.nav_templates) {
-                    loadFragment(new Templates());
-                } else if (id == R.id.nav_colour) {
-                    loadFragment(new Colors());
-
-                } else if (id == R.id.nav_font) {
-                    loadFragment(new Fonts());
-                } else {
-                    loadFragment(new Finish_Creation());
                 }
-
                 drawerLayout.closeDrawer(GravityCompat.START);
 
                 return true;

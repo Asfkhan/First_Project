@@ -24,7 +24,8 @@
             android:layout_margin="10dp"
             android:layout_weight="1"
             android:contentDescription="TODO"
-            android:fitsSystemWindows="true" />
+            android:fitsSystemWindows="true"
+            tools:ignore="ContentDescription" />
 
         <TextView
             android:id="@+id/page_title_id"

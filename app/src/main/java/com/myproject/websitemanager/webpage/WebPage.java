@@ -7,15 +7,12 @@ import android.graphics.Color;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ScrollView;
 import android.widget.SeekBar;
-import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -24,7 +21,7 @@ import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
-import androidx.core.content.res.ResourcesCompat;
+import androidx.constraintlayout.widget.ConstraintLayout;
 
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.database.FirebaseDatabase;
@@ -48,7 +45,6 @@ public class WebPage extends AppCompatActivity {
 
 
 
-    private Spinner spinner;
 
 
 
@@ -71,11 +67,11 @@ public class WebPage extends AppCompatActivity {
     LinearLayout headinglayout;
 
  //   Bundle headFontBundle = new Bundle();
-    LinearLayout tableLayout;
+    ConstraintLayout tableLayout;
     String headingTxtColor,headingSize,headingSectionColor,tableSectionColor,newlayout1Color
             ,newlayout2Color;
     Bundle headingtxtBundle = new Bundle();
-    ArrayAdapter<String> stringArrayAdapter;
+
     @Override
     public void onBackPressed() {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
@@ -299,8 +295,7 @@ public class WebPage extends AppCompatActivity {
        });
        deletedescription2btn.setOnClickListener(v -> description2.setVisibility(View.GONE));
 
-        spinner = findViewById(R.id.spinner);
-        changefontFamily();
+
         seekBar = findViewById(R.id.seekbar_id);
         font_no = findViewById(R.id.font_no_id);
         hidden_layout = findViewById(R.id.hidden_layout_id);
@@ -628,70 +623,6 @@ public class WebPage extends AppCompatActivity {
        }catch(Exception e){
            Toast.makeText(this, "Sorry Cannot Create Page....", Toast.LENGTH_SHORT).show();
        }
-    }
-    private void changefontFamily() {
-        stringArrayAdapter = new ArrayAdapter<>(WebPage.this, android.R.layout.simple_spinner_item,
-                getResources().getStringArray(R.array.preloaded_fonts));
-        stringArrayAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        spinner.setAdapter(stringArrayAdapter);
-
-        spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-
-                @Override
-                public void onItemSelected (AdapterView < ? > parent, View view,int position,long id){
-
-                    try{
-                if (position == 1) {
-                    headtext.setTypeface(ResourcesCompat.getFont(WebPage.this,R.font.bangers));
-
-                } else if (position == 2) {
-                    headtext.setTypeface(ResourcesCompat.getFont(WebPage.this,R.font.bangers));
-                } else if (position == 3) {
-                    headtext.setTypeface(ResourcesCompat.getFont(WebPage.this,R.font.bangers));
-                } else if (position == 4) {
-                    headtext.setTypeface(ResourcesCompat.getFont(WebPage.this,R.font.aclonica));
-                } else if (position == 5) {
-                    headtext.setTypeface(ResourcesCompat.getFont(WebPage.this,R.font.acme));
-                } else if (position == 6) {
-                    headtext.setTypeface(ResourcesCompat.getFont(WebPage.this,R.font.alfa_slab_one));
-                } else if (position == 7) {
-                    headtext.setTypeface(ResourcesCompat.getFont(WebPage.this,R.font.bangers));
-                } else if (position == 9) {
-                    headtext.setTypeface(ResourcesCompat.getFont(WebPage.this,R.font.big_shoulders_stencil_display_semibold));
-                }else if (position == 10) {
-                    headtext.setTypeface(ResourcesCompat.getFont(WebPage.this,R.font.bungee_shade));
-
-                }else if (position == 11) {
-                    headtext.setTypeface(ResourcesCompat.getFont(WebPage.this,R.font.cherry_swash_bold));
-
-                }else if (position == 12) {
-                    headtext.setTypeface(ResourcesCompat.getFont(WebPage.this,R.font.cinzel_decorative_bold));
-                }else if (position == 13) {
-                    headtext.setTypeface(ResourcesCompat.getFont(WebPage.this,R.font.creepster));
-                }else if (position == 14) {
-                    headtext.setTypeface(ResourcesCompat.getFont(WebPage.this,R.font.diplomata));
-
-                }else if (position == 8) {
-                    headtext.setTypeface(ResourcesCompat.getFont(WebPage.this,R.font.fontdiner_swanky));
-
-                }
-
-                }catch(Exception e){
-                        Toast.makeText(WebPage.this, " " + e, Toast.LENGTH_SHORT).show();
-
-                    }
-            }
-
-
-
-
-            @Override
-            public void onNothingSelected(AdapterView<?> parent) {
-
-            }
-        });
-
-
     }
     private void changefontsize() {
 

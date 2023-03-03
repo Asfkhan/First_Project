@@ -94,7 +94,7 @@
                         <ImageView
                             android:id="@+id/newBanner_id"
                             android:layout_width="match_parent"
-                            android:layout_height="match_parent"
+                            android:layout_height="280dp"
                             android:layout_gravity="center"
                             tools:ignore="ContentDescription"
                             tools:srcCompat="@drawable/ic_gallery_black_24dp" />

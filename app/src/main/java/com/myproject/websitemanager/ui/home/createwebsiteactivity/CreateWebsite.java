@@ -46,7 +46,7 @@ public class CreateWebsite extends AppCompatActivity {
 
         NavigationView navigationView = binding.appBarCreateWebsite.coordinatorLayout;
         mAppBarConfiguration = new AppBarConfiguration.Builder(
-              R.id.nav_first_webpage, R.id.nav_create_color, R.id.nav_new_font, R.id.nav_overview)
+              R.id.nav_first_webpage, R.id.nav_create_color, R.id.nav_overview)
                 .setOpenableLayout(binding.drawerLayout)
                 .build();
         NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
@@ -54,7 +54,7 @@ public class CreateWebsite extends AppCompatActivity {
 
         BottomNavigationView bottomNavigationView = binding.appBarCreateWebsite.contentCreateWebsite.bottomNavView;
         mAppBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.nav_first_webpage, R.id.nav_create_color, R.id.nav_new_font)
+                R.id.nav_first_webpage, R.id.nav_create_color)
                 .build();
         NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
         NavigationUI.setupWithNavController(bottomNavigationView, navController);

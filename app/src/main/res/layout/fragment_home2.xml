@@ -35,16 +35,6 @@
         android:textColor="@color/white" />
 
     <Button
-        android:id="@+id/managewebsiteid"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_margin="10dp"
-        android:backgroundTint="@color/app_logo_background"
-        android:text="MANAGE WEBSITE"
-        android:textColor="#303F9F" />
-
-    <Button
         android:id="@+id/webpage2_view_btn_id"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

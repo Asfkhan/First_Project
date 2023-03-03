@@ -1,24 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <array name="preloaded_fonts" translatable="false">
-        <item>@font/almendra_display</item>
-        <item>@font/faster_one</item>
-        <item>@font/londrina_sketch</item>
-        <item>@font/nosifer</item>
-        <item>Select Font Family</item>
-        <item>acme</item>
-        <item>aclonica</item>
-        <item>alfa_slab_one</item>
-        <item>almendra_display</item>
-        <item>architects_daughter</item>
-        <item>asset</item>
-        <item>bangers</item>
-        <item>big_shoulders_inline_display_semibold</item>
-        <item>changa_extralight</item>
-        <item>cherry_swash</item>
-        <item>cherry_swash_bold</item>
-        <item>creepter</item>
-        <item>diplomata</item>
-        <item>fontdiner</item>
+        <item>Select Heading Font</item>
+        <item>Acme</item>
+        <item>Al_sc</item>
+        <item>Alfa_slab_one</item>
+        <item>Al-men Display</item>
+        <item>Al-Men-Dra Sc</item>
+        <item>Asset</item>
+        <item>Bangers</item>
+        <item>Bevan</item>
+        <item>Bungee Outline</item>
+        <item>Bungee Shades</item>
+        <item>Cheap Str</item>
+        <item>Diplomata</item>
+        <item>new_Rocker</item>
+        <item>Fascinate Inline</item>
     </array>
 </resources>

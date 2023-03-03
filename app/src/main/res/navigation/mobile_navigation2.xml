@@ -17,16 +17,4 @@
         android:label="@string/menu_change_background_color"
         tools:layout="@layout/create_colors" />
 
-    <fragment
-        android:id="@+id/nav_new_font"
-        android:name="com.myproject.websitemanager.ui.home.createwebsiteactivity.ui.create_font.CreateFont"
-        android:label="@string/menu_new_fontstyle"
-        tools:layout="@layout/create_fonts" >
-    </fragment>
-
-    <fragment
-        android:id="@+id/nav_overview"
-        android:name="com.myproject.websitemanager.ui.home.createwebsiteactivity.ui.overview.OverView"
-        android:label="@string/menu_OverView"
-        tools:layout="@layout/fragment_overview" />
 </navigation>
