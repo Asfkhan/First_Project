@@ -3,18 +3,15 @@ Wrap the DrawerLayout with FrameLayout to use the same View type for the same vi
 across the layout configurations
 -->
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/create_webpage_activity_container_id"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
     <androidx.drawerlayout.widget.DrawerLayout
-        android:id="@+id/drawer_layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:fitsSystemWindows="true">
 
         <include
-            android:id="@+id/app_bar_create_website"
             layout="@layout/app_bar_create_website"
             android:layout_width="match_parent"
             android:layout_height="match_parent" />

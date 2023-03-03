@@ -39,12 +39,13 @@ public class CreateWebsite extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         ActivityCreateWebsiteBinding binding = ActivityCreateWebsiteBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+        assert binding.appBarCreateWebsite != null;
         setSupportActionBar(binding.appBarCreateWebsite.createWebsiteToolbarId);
         NavHostFragment navHostFragment = (NavHostFragment) getSupportFragmentManager().findFragmentById(R.id.nav_host_fragment_content_create_website);
         assert navHostFragment != null;
         NavController navController = navHostFragment.getNavController();
 
-        NavigationView navigationView = binding.appBarCreateWebsite.coordinatorLayout;
+        NavigationView navigationView = binding.appBarCreateWebsite.navigationviewId;
         mAppBarConfiguration = new AppBarConfiguration.Builder(
               R.id.nav_first_webpage, R.id.nav_create_color, R.id.nav_overview)
                 .setOpenableLayout(binding.drawerLayout)

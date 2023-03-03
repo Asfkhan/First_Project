@@ -1,34 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="purple_200">#FFBB86FC</color>
-    <color name="purple_500">#FF6200EE</color>
     <color name="purple_700">#FF3700B3</color>
     <color name="teal_200">#FF03DAC5</color>
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="orange">#FF3D00</color>
-    <color name="cool">#188FCF</color>
     <color name="warm">#F1D416</color>
-    <color name="green">#F1D416</color>
     <color name="Scuba_blue">#00abc0</color>
-    <color name="off_beat_green">#9C8B1F</color>
-    <color name="Morning_glory">#3e4589</color>
-    <color name="Titanium"> #878681</color>
-    <color name="Roasted_almond">#d2b49c</color>
     <color name="Burgundy">#800020</color>
-    <color name="Sandstone">#786D5F</color>
-    <color name="Emerald">#50C878</color>
-    <color name="Olive">#808000</color>
-    <color name="Forceful_orange">#F39414</color>
-    <color name="Butternut">#C39B74</color>
     <color name="vast_sky">#A7C8D6</color>
-    <color name="Intellectual_Grey"> #A89F90</color>
     <color name="Obstinate_orange"> #DB572E</color>
-    <color name="Dazzle">#5287b9</color>
     <color name="Frank_blue">#225288</color>
-    <color name="Fiesta"> #e5732f</color>
-
 
 
 </resources>

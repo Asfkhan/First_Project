@@ -2,14 +2,13 @@
 <com.google.android.material.navigation.NavigationView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/coordinator_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/navigationview_id"
     android:fitsSystemWindows="true"
     tools:context=".ui.home.createwebsiteactivity.CreateWebsite">
 
     <com.google.android.material.appbar.AppBarLayout
-        android:id="@+id/top_nav_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_gravity="center_horizontal"
@@ -25,7 +24,7 @@
 
 
             <androidx.appcompat.widget.Toolbar
-                android:id="@+id/create_website_toolbar_id"
+                android:id="@+id/createWebsiteToolbarId"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_gravity="end"
@@ -36,12 +35,13 @@
         </LinearLayout>
 
         <androidx.coordinatorlayout.widget.CoordinatorLayout
+
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_gravity="bottom">
 
             <include
-                android:id="@+id/content_create_website"
+                android:id="@+id/contentCreateWebsite"
                 layout="@layout/content_create_website" />
 
         </androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -2,32 +2,10 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/mobile_navigation"
     app:startDestination="@id/nav_home">
     <fragment
         android:id="@+id/nav_home"
         android:name="com.myproject.websitemanager.ui.home.Home"
         android:label="@string/menu_home"
         tools:layout="@layout/fragment_home2" />
-    <fragment
-        android:id="@+id/nav_templates"
-        android:name="com.myproject.websitemanager.ui.template.Templates"
-        android:label="@string/menu_templates"
-        tools:layout="@layout/fragment_templates" />
-    <fragment
-        android:id="@+id/nav_colour"
-        android:name="com.myproject.websitemanager.ui.colors.Colors"
-        android:label="@string/menu_colour"
-        tools:layout="@layout/fragment_colors" />
-    <fragment
-        android:id="@+id/nav_font"
-        android:name="com.myproject.websitemanager.ui.fonts.Fonts"
-        android:label="@string/menu_font"
-        tools:layout="@layout/fragment_fonts" />
-
-    <fragment
-        android:id="@+id/nav_finish"
-        android:name="com.myproject.websitemanager.ui.finish_creation.Finish_Creation"
-        android:label="@string/menu_finish"
-        tools:layout="@layout/fragment_finish__creation" />
 </navigation>

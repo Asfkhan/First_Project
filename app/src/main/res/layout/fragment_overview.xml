@@ -32,7 +32,6 @@
                     android:padding="5dp">
 
                     <Button
-                        android:id="@+id/button2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
@@ -46,7 +45,6 @@
                         tools:ignore="SpeakableTextPresentCheck" />
 
                     <Button
-                        android:id="@+id/button3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
@@ -65,7 +63,6 @@
                     android:padding="5dp">
 
                     <Button
-                        android:id="@+id/button4"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical"
@@ -78,7 +75,6 @@
                         tools:ignore="TextContrastCheck" />
 
                     <Button
-                        android:id="@+id/button5"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -88,7 +84,6 @@
                         tools:ignore="TextContrastCheck" />
 
                     <Button
-                        android:id="@+id/button6"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -99,7 +94,6 @@
             </LinearLayout>
 
             <androidx.viewpager2.widget.ViewPager2
-                android:id="@+id/viewpapager_banner_id"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -127,7 +121,6 @@
                 android:orientation="vertical">
 
                 <Button
-                    android:id="@+id/button7"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:backgroundTint="#07135B"

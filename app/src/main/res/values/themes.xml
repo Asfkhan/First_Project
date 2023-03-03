@@ -24,10 +24,6 @@
         <item name="windowNoTitle">true</item>
     </style>
 
-    <style name="Theme.WebSiteManager.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
-
-    <style name="Theme.WebSiteManager.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
-
     <style name="Theme.WebSiteManager.NoActionBar.NoActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>

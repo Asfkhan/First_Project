@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:layout_margin="20dp"
     android:orientation="vertical"
     tools:context=".view_webpage.View_Webpage"
     tools:ignore="HardcodedText">
@@ -13,7 +14,6 @@
         tools:ignore="NestedScrolling">
 
         <LinearLayout
-            android:id="@+id/page_to_create_id"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="#FFFFFF"
@@ -48,7 +48,6 @@
 
 
                 <LinearLayout
-                    android:id="@+id/Webpage2_show_hidden_layout_id"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
@@ -98,8 +97,8 @@
                             android:id="@+id/banner_scroll_hiddenlayout_id"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:visibility="gone"
-                            android:orientation="vertical">
+                            android:orientation="vertical"
+                            android:visibility="gone">
 
                             <TextView
                                 android:id="@+id/banner_top_scroll_id"
@@ -256,7 +255,6 @@
 
 
                     <LinearLayout
-                        android:id="@+id/linearLayout"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:orientation="vertical"
@@ -279,7 +277,6 @@
                         </LinearLayout>
 
                         <TextView
-                            android:id="@+id/textView10"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:singleLine="true"
@@ -311,7 +308,6 @@
                             android:textSize="24sp" />
 
                         <TextView
-                            android:id="@+id/textView8"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:singleLine="true"
@@ -363,7 +359,6 @@
                             android:textSize="24sp" />
 
                         <TextView
-                            android:id="@+id/textView6"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:singleLine="true"
@@ -468,7 +463,6 @@
                             </androidx.cardview.widget.CardView>
 
                             <TextView
-                                android:id="@+id/textView2"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:padding="20dp"
