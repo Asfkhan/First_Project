@@ -300,7 +300,6 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal"
                         android:layout_margin="34dp"
-                        android:foreground="@drawable/template10"
                         android:src="@android:drawable/gallery_thumb" />
 
                     <TextView
