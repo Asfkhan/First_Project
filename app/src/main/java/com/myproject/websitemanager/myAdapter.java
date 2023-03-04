@@ -1,18 +1,16 @@
 package com.myproject.websitemanager;
 
 import android.content.Intent;
-import android.graphics.Color;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
-import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewpager2.widget.ViewPager2;
 
+import com.makeramen.roundedimageview.RoundedImageView;
 import com.myproject.websitemanager.myinterface.ItemClickedSelected;
 import com.myproject.websitemanager.webpage.CommonWebPage;
 import com.myproject.websitemanager.webpage.WebPage;
@@ -25,7 +23,7 @@ public class myAdapter extends RecyclerView.Adapter<CustomViewHolder>
 {
     int row = -1;
     List<WebPageModel> webPageModels;
-    private ViewPager2 viewPager2;
+    private final ViewPager2 viewPager2;
 
     public myAdapter(List<WebPageModel> webPageModels, ViewPager2 viewPager2) {
         this.webPageModels = webPageModels;
@@ -43,31 +41,20 @@ public class myAdapter extends RecyclerView.Adapter<CustomViewHolder>
 
     @Override
     public void onBindViewHolder(@NonNull CustomViewHolder holder, int position) {
-        holder.themeview.setImageResource(webPageModels.get(position).getThemeimage());
-        holder.themetext.setText(webPageModels.get(position).getThemename());
-        holder.setItemClickedSelected(new ItemClickedSelected() {
-            @Override
-            public void onClick(View view, int position) {
-                row = position;
-                CommonWebPage.currentitem = webPageModels.get(position);
-                notifyDataSetChanged();
+      holder.settheme(webPageModels.get(position));
+        holder.setItemClickedSelected((view, position1) -> {
+            row = position1;
+            CommonWebPage.currentitem = webPageModels.get(position1);
+            notifyItemChanged(position1);
 
-            }
         });
             if(row == position){
                 AppCompatActivity activity = (AppCompatActivity)viewPager2.getContext();
                 Intent i = new Intent(activity, WebPage.class);
                 activity.startActivity(i);
                 holder.itemView.setBackgroundResource(R.drawable.layoutsliderbackground);
-                holder.themetext.setTextColor(Color.WHITE);
-
-
             }
-            else{
-                holder.itemView.setBackgroundColor(Color.parseColor("#FFFFFFFF"));
-                holder.themetext.setTextColor(Color.parseColor("#FFFFFFFF"));
 
-            }
     }
 
     @Override
@@ -77,9 +64,7 @@ public class myAdapter extends RecyclerView.Adapter<CustomViewHolder>
 }
 class CustomViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener
 {
-    public ImageView themeview;
-    public TextView themetext;
-    public ViewPager2 viewPager2;
+    public RoundedImageView themeview;
     ItemClickedSelected itemClickedSelected;
 
     public void setItemClickedSelected(ItemClickedSelected itemClickedSelected) {
@@ -88,15 +73,12 @@ class CustomViewHolder extends RecyclerView.ViewHolder implements View.OnClickLi
 
     public CustomViewHolder(@NonNull View itemView) {
         super(itemView);
-        themetext = itemView.findViewById(R.id.themename_id);
         themeview = itemView.findViewById(R.id.layoutslide);
         itemView.setOnClickListener(this);
     }
-    /*void settheme(WebPageModel webPageModel){
+    void settheme(WebPageModel webPageModel){
         themeview.setImageResource(webPageModel.getThemeimage());
-        themetext.setText(webPageModel.getThemename());
-
-    }*/
+    }
 
     @Override
     public void onClick(View view) {

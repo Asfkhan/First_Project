@@ -1,7 +1,7 @@
 package com.myproject.websitemanager.signup_page;
 
 public class SavedUserImages {
-  private   String userimg;
+  private  String userimg;
 
     public String getUserimg() {
         return userimg;

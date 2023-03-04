@@ -7,6 +7,9 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.RecyclerView;
+import androidx.viewpager2.widget.CompositePageTransformer;
+import androidx.viewpager2.widget.MarginPageTransformer;
 import androidx.viewpager2.widget.ViewPager2;
 
 import com.myproject.websitemanager.R;
@@ -29,9 +32,9 @@ public class SetTheme extends Fragment {
              webPageModels.add(new WebPageModel(R.drawable.template1,"Helmet Store",true));
             webPageModels.add(new WebPageModel(R.drawable.template2,"Shopping Store",true));
              webPageModels.add(new WebPageModel(R.drawable.template3,"Business Profile",true));
-             webPageModels.add(new WebPageModel(R.drawable.template4,"Entertainment Page",true));
-           webPageModels.add(new WebPageModel(R.drawable.template5,"PortFolio",true));
-            webPageModels.add(new WebPageModel(R.drawable.template6,"NGO Page",true));
+             webPageModels.add(new WebPageModel(R.drawable.templatemistaken,"Entertainment Page",true));
+           webPageModels.add(new WebPageModel(R.drawable.template4,"PortFolio",true));
+            webPageModels.add(new WebPageModel(R.drawable.template5,"NGO Page",true));
             webPageModels.add(new WebPageModel(R.drawable.template7,"Education Page",true));
             webPageModels.add(new WebPageModel(R.drawable.template8,"Profile Page",true));
            webPageModels.add(new WebPageModel(R.drawable.template9,"Retailer Shop",true));
@@ -43,6 +46,17 @@ public class SetTheme extends Fragment {
          webPageModels.add(new WebPageModel(R.drawable.template15,"Workers Profile",true));
          viewPager2.setAdapter(new myAdapter(webPageModels, viewPager2));
 
+         viewPager2.setClipToPadding(false);
+         viewPager2.setClipChildren(false);
+         viewPager2.setOffscreenPageLimit(3);
+         viewPager2.getChildAt(0).setOverScrollMode(RecyclerView.OVER_SCROLL_NEVER);
+        CompositePageTransformer compositePageTransformer = new CompositePageTransformer();
+        compositePageTransformer.addTransformer(new MarginPageTransformer(40));
+        compositePageTransformer.addTransformer((page, position) -> {
+            float r = 1 - Math.abs(position);
+            page.setScaleY(0.85f + r * 0.15f);
+        });
+        viewPager2.setPageTransformer(compositePageTransformer);
          return root;
          }
 

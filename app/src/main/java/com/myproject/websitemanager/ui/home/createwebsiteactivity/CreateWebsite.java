@@ -58,6 +58,7 @@ public class CreateWebsite extends AppCompatActivity {
                 R.id.nav_first_webpage, R.id.nav_create_color)
                 .build();
         NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
+        assert bottomNavigationView != null;
         NavigationUI.setupWithNavController(bottomNavigationView, navController);
     }
 
