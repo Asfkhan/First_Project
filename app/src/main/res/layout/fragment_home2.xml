@@ -42,6 +42,8 @@
         android:backgroundTint="#388E3C"
         android:gravity="center|start"
         android:text="VIEW YOUR WEBSITE"
-        app:icon="@drawable/ic_baseline_preview_24" />
+        android:textColor="@color/white"
+        app:icon="@drawable/ic_baseline_preview_24"
+        app:iconTint="@color/white" />
 
 </LinearLayout>

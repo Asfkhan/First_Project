@@ -44,12 +44,4 @@
         app:iconSize="120dp"
         tools:ignore="TextContrastCheck,TextContrastCheck" />
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:backgroundTint="#1B083D"
-        android:layout_weight="1"
-        android:text="Submit"
-        android:textColor="@color/white" />
-
 </LinearLayout>

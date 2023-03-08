@@ -4,6 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_margin="20dp"
+    android:background="@color/white"
     android:orientation="vertical"
     tools:context=".view_webpage.View_Webpage"
     tools:ignore="HardcodedText">
@@ -380,7 +381,7 @@
                                 android:layout_marginStart="20dp"
                                 android:layout_marginEnd="20dp"
                                 android:padding="20dp"
-                                app:cardBackgroundColor="#FFFFFF"
+                                app:cardBackgroundColor="@color/white"
                                 app:cardCornerRadius="15dp">
 
 
@@ -390,6 +391,7 @@
                                     android:layout_height="wrap_content"
                                     android:layout_gravity="center|center_horizontal"
                                     android:layout_weight="1"
+                                    android:background="@color/white"
                                     app:srcCompat="@drawable/instagramlogo"
                                     tools:ignore="ContentDescription" />
 
@@ -411,15 +413,17 @@
                                 android:layout_gravity="center"
                                 android:layout_marginStart="20dp"
                                 android:layout_marginEnd="20dp"
+                                app:cardBackgroundColor="@color/white"
                                 app:cardCornerRadius="20dp">
 
 
                                 <ImageView
 
-                                    android:layout_width="wrap_content"
+                                    android:layout_width="35dp"
                                     android:layout_height="wrap_content"
                                     android:layout_gravity="center|center_horizontal"
                                     android:layout_weight="1"
+                                    android:background="@color/white"
                                     app:srcCompat="@drawable/twitterlogo"
                                     tools:ignore="ContentDescription" />
 
@@ -440,6 +444,7 @@
                                 android:layout_gravity="center"
                                 android:layout_marginStart="20dp"
                                 android:layout_marginEnd="20dp"
+                                app:cardBackgroundColor="@color/white"
                                 app:cardCornerRadius="20dp">
 
 
@@ -448,6 +453,7 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_gravity="center|center_horizontal"
+                                    android:background="@color/white"
                                     app:srcCompat="@drawable/whatsapplogo"
                                     tools:ignore="ContentDescription" />
 

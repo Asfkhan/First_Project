@@ -3,7 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@color/white"
     android:fitsSystemWindows="true"
     android:orientation="vertical"
     tools:ignore="HardcodedText">
@@ -15,13 +16,15 @@
         android:layout_gravity="center"
         android:layout_margin="50dp"
         android:ellipsize="marquee"
+        android:fontFamily="@font/new_rocker"
         android:gravity="center"
         android:scrollHorizontally="true"
         android:singleLine="true"
         android:text="View Your WebSite "
+        android:textColor="@color/black"
         android:textSize="34sp"
-        app:drawableStartCompat="@drawable/ambilwarna_arrow_down"
-        app:drawableEndCompat="@drawable/ambilwarna_arrow_down" />
+        app:drawableEndCompat="@drawable/ambilwarna_arrow_down"
+        app:drawableStartCompat="@drawable/ambilwarna_arrow_down" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerViewid"

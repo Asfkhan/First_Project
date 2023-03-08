@@ -38,7 +38,10 @@
                 android:background="@drawable/text_box_background"
                 app:endIconDrawable="@drawable/ic_baseline_cancel_24"
                 app:endIconMode="clear_text"
+                app:endIconTint="@color/black"
                 app:endIconScaleType="center"
+                android:textColorHint="@color/black"
+                app:startIconTint="@color/black"
                 app:startIconDrawable="@drawable/ic_baseline_markunread_24">
 
                 <com.google.android.material.textfield.TextInputEditText
@@ -47,6 +50,7 @@
                     android:layout_height="match_parent"
                     android:background="@drawable/text_box_background"
                     android:hint="@string/Email_ID"
+                    android:textColor="@color/black"
                     android:textColorHighlight="#388E3C"
                     android:textColorHint="#01579B"
                     tools:ignore="TextContrastCheck" />
@@ -59,10 +63,13 @@
                 android:layout_height="57dp"
                 android:layout_margin="10dp"
                 android:background="@drawable/text_box_background"
+                android:textColorHint="@color/black"
                 app:endIconScaleType="center"
                 app:passwordToggleEnabled="true"
+                app:passwordToggleTint="#000000"
                 app:passwordToggleTintMode="multiply"
-                app:startIconDrawable="@drawable/ic_baseline_lock_24">
+                app:startIconDrawable="@drawable/ic_baseline_lock_24"
+                app:startIconTint="@color/black">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/t2"
@@ -71,6 +78,7 @@
                     android:background="@drawable/text_box_background"
                     android:hint="@string/PasswordloginPage"
                     android:inputType="textPassword"
+                    android:textColor="@color/black"
                     android:textColorHighlight="#388E3C"
                     android:textColorHint="#7B1FA2"
                     tools:ignore="TextContrastCheck" />
@@ -83,6 +91,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
                 android:text="@string/agree_terms_and_condition"
+                android:textColor="@color/black"
                 android:textStyle="italic"
                 app:buttonIcon="@android:drawable/checkbox_on_background" />
 
@@ -90,7 +99,9 @@
                 android:id="@+id/validuser1"
                 android:layout_width="205dp"
                 android:layout_height="wrap_content"
+                android:backgroundTint="#3F51B5"
                 android:text="@string/login_now"
+                android:textColor="#FFFFFF"
                 android:textSize="24sp"
                 tools:ignore="TextSizeCheck" />
 

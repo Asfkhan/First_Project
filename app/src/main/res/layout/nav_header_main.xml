@@ -17,6 +17,7 @@
         android:layout_width="90dp"
         android:layout_height="90dp"
         android:layout_marginTop="30dp"
+        app:cardBackgroundColor="@color/white"
         app:cardCornerRadius="80dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -30,6 +31,8 @@
             android:layout_centerHorizontal="true"
             android:layout_centerVertical="true"
             android:layout_gravity="center"
+            android:background="@color/white"
+            android:backgroundTint="@color/white"
             app:srcCompat="@drawable/ic_baseline_account_circle_24"
             tools:ignore="ContentDescription" />
     </androidx.cardview.widget.CardView>
@@ -52,6 +55,7 @@
         android:gravity="center"
         android:text="@string/nav_header_subtitle"
         android:textAlignment="center"
+        android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/userName_id" />

@@ -14,7 +14,7 @@
         android:layout_gravity="center_horizontal"
         android:background="@drawable/side_nav_bar"
         android:paddingTop="30dp"
-        android:theme="@style/Theme.WebSiteManager.NoActionBar.AppBarOverlay">
+        android:theme="@style/Theme.WebSiteManager.NoActionBar.NoActionBar">
 
         <LinearLayout
             android:layout_width="match_parent"

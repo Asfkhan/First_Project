@@ -32,7 +32,7 @@
             android:layout_margin="10dp"
             android:entries="@array/preloaded_fonts"
             android:minHeight="48dp"
-            android:spinnerMode="dropdown"
+            android:spinnerMode="dialog"
             android:textAlignment="center"
             tools:ignore="TouchTargetSizeCheck" />
 

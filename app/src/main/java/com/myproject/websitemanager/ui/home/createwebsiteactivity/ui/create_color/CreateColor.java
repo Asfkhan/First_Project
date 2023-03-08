@@ -13,15 +13,17 @@ import androidx.fragment.app.Fragment;
 
 import com.myproject.websitemanager.R;
 import com.myproject.websitemanager.webpage.WebPage;
+
 public class CreateColor extends Fragment{
     Activity createcolor;
     View view;
-    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        view = inflater.inflate(R.layout.create_colors, container, false);
-        createcolor = getActivity();
+
+    @Override
+    public void onStart() {
+        super.onStart();
         Button background = view.findViewById(R.id.background_color_id);
         background.setOnClickListener(view -> {
-            Intent i = new Intent(getActivity(),WebPage.class);
+            Intent i = new Intent(getActivity(), WebPage.class);
             startActivity(i);
             Toast.makeText(createcolor,"Select Heading to change color",Toast.LENGTH_LONG).show();
         });
@@ -33,12 +35,16 @@ public class CreateColor extends Fragment{
         });
         Button sectioncolorbtn = view.findViewById(R.id.section_color_id);
         sectioncolorbtn.setOnClickListener(view -> {
-            Intent i = new Intent(getActivity(),WebPage.class);
-            startActivity(i);
-            Toast.makeText(createcolor,"Select section to change color",Toast.LENGTH_LONG).show();
+                    Intent i = new Intent(getActivity(),WebPage.class);
+                    startActivity(i);
+                    Toast.makeText(createcolor,"Select section to change color",Toast.LENGTH_LONG).show();
                 }
         );
+    }
 
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        view = inflater.inflate(R.layout.create_colors, container, false);
+        createcolor = getActivity();
 
         return view;
     }
